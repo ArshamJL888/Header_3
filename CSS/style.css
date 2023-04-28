@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Teko:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Teko', sans-serif;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(19, 17, 17);
+}
+
+.header-image {
+    width: 70%;
+    height: 600px;
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    animation: Right 2s ease-in;
+}
+
+.text {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 7%;
+}
+
+.main-text {
+    color: rgba(172, 172, 172, 0.8);
+    font-size: 220px;
+    animation: Left 2s ease-out;
+}
+
+.color-red {
+    font-style: normal;
+    color: rgb(133, 2, 2);
+}
+
+.navbar {
+    width: 100%;
+    background-color: #000000;
+    color: #FFFFFF;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3rem;
+}
+
+.navbar-left {
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+}
+
+.navbar-right {
+    cursor: pointer;
+    font-weight: 550;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav-link {
+    margin-left: 1.2rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: all 0.3s ease-out;
+}
+
+.active {
+    color: rgb(175, 4, 4);
+}
+
+.nav-link:hover {
+    transform: scale(1.3);
+}
+
+.media {
+    color: #FFFFFF;
+    padding: 0.5rem;
+    position: absolute;
+    bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    align-content: center;
+
+}
+
+.media-link {
+    margin-top: 0.8rem;
+}
+
+.media-text {
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+}
+
+.fa {
+    color: #FFFFFF;
+    font-size: 1.75rem;
+}
+
+@keyframes Right {
+    0% {
+        opacity: 0;
+        transform: translateX(-1500px);
+    }
+
+    90% {
+transform:  translateX(+15px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes Left {
+    0% {
+        opacity: 0;
+        transform: translateX(16000px);
+    }
+
+    90% {
+        transform:  translateX(-15px);
+
+    }
+
+    100% {
+        opacity: 1;
+
+        transform: translateX(0);
+    }
+}
